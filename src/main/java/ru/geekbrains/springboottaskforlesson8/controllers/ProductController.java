@@ -25,7 +25,7 @@ public class ProductController {
         if (page < 1) {
             page = 1;
         }
-        return service.findAll(ProductSpecification.build(params), page, 2);
+        return service.findAll(ProductSpecification.build(params), page, 10);
     }
 
     @GetMapping("/{id}")
